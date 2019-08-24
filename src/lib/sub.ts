@@ -1,4 +1,4 @@
-import { B, BitTuple } from '../util/binary';
+import {B, BitTuple} from '../util/binary';
 import { DecIf, Dec2If, Dec4If, Dec8If, Dec16If, Dec32If } from '../util/dec';
 
 type _Sub<
@@ -14,7 +14,3 @@ type _Sub<
 > = R5;
 
 export type Sub<N1 extends number, N2 extends number> = _Sub<N1, N2>;
-
-export function sub<N1 extends number, N2 extends number>(n1: N1, n2: N2): Sub<N1, N2> {
-	return n1 - n2 as any;
-}

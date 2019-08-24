@@ -2,6 +2,7 @@ import { IncIf, Inc2If, Inc4If, Inc8If, Inc16If, Inc32If } from './inc';
 import { Dec, Dec2, Dec4, Dec8, Dec16, Dec32 } from './dec';
 
 export type B = 0 | 1;
+export const BitMask = 63;
 
 type Overflow<N extends number> = -1 extends N ? 0 : 1;
 

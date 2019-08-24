@@ -1,4 +1,4 @@
-import { B, BitTuple } from '../util/binary';
+import {B, BitTuple} from '../util/binary';
 import { IncIf, Inc2If, Inc4If, Inc8If, Inc16If, Inc32If } from '../util/inc';
 
 type _Add<
@@ -14,7 +14,3 @@ type _Add<
 > = R5;
 
 export type Add<N1 extends number, N2 extends number> = _Add<N1, N2>;
-
-export function add<N1 extends number, N2 extends number>(n1: N1, n2: N2): Add<N1, N2> {
-	return n1 + n2 as any;
-}

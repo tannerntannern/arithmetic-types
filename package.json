@@ -1,5 +1,5 @@
 {
-  "name": "overengineered-arithmetic-ts",
+  "name": "arithmetic-types",
   "version": "1.0.0",
   "description": "Stupidly over-engineered integer arithmetic for TypeScript",
   "types": "dist/index.ts",

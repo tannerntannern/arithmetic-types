@@ -13,13 +13,3 @@ type _BitShiftRight<
 export type BitShiftLeft<N extends number> = Number<_BitShiftLeft<N>>;
 
 export type BitShiftRight<N extends number> = Number<_BitShiftRight<N>>;
-
-const bitMask = 63;
-
-export function bitShiftLeft<N extends number>(n: N): BitShiftLeft<N> {
-	return ((n << 1) & bitMask) as any;
-}
-
-export function bitShiftRight<N extends number>(n: N): BitShiftRight<N> {
-	return ((n >> 1) & bitMask) as any;
-}
