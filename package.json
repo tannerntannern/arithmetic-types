@@ -5,6 +5,9 @@
   "types": "dist/index.ts",
   "main": "dist/index.js",
   "module": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
   "devDependencies": {
     "typescript": "^3.5.3"
   },
