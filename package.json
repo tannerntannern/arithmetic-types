@@ -1,0 +1,17 @@
+{
+  "name": "overengineered-arithmetic-ts",
+  "version": "1.0.0",
+  "description": "Stupidly over-engineered integer arithmetic for TypeScript",
+  "types": "dist/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "devDependencies": {
+    "typescript": "^3.5.3"
+  },
+  "author": "Tanner Nielsen <tannerntannern@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tannerntannern/overengineered-arithmetic-ts.git"
+  },
+  "license": "MIT"
+}
