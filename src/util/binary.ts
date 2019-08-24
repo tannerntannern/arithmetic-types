@@ -1,3 +1,4 @@
+import { IncIf, Inc2If, Inc4If, Inc8If, Inc16If, Inc32If } from './inc';
 import { Dec, Dec2, Dec4, Dec8, Dec16, Dec32 } from './dec';
 
 export type B = 0 | 1;
@@ -29,3 +30,13 @@ export type BitTuple<
 	R5D extends number = Dec<R5>,
 	B5 extends B = Overflow<R5D>,
 > = [B0, B1, B2, B3, B4, B5];
+
+export type Number<
+	BitTuple extends [B, B, B, B, B, B],
+	R0 extends number = Inc32If<0, BitTuple[0]>,
+	R1 extends number = Inc16If<R0, BitTuple[1]>,
+	R2 extends number = Inc8If<R1, BitTuple[2]>,
+	R3 extends number = Inc4If<R2, BitTuple[3]>,
+	R4 extends number = Inc2If<R3, BitTuple[4]>,
+	R5 extends number = IncIf<R4, BitTuple[5]>,
+> = R5;
